@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+</head>
+<body>
+<div id="advert-mask" onclick="openadvert()">
+    <a href="#" id="advert-focus" target="_blank"></a>
+</div>
+<style>
+    #advert-mask {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 10000;
+    }
+</style>
+<script>
+
+    let adverts = [
+        'https://wa.me/918145278440/',
+        'https://wa.me/919959199857/',
+        'https://wa.me/918736959980/',
+    ];
+
+    function openadvert() {
+        if (adverts.length == 0) {
+            let mask = document.getElementById("advert-mask");
+            mask.remove();
+            return;
+        }
+
+        let url = adverts.pop();
+        window.open(url);
+        let href = document.getElementById("advert-focus");
+        href.setAttribute("href", url);
+    }
+</script>
+</body>
+</html>
