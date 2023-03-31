@@ -4,7 +4,7 @@
 - 协议类型： Websocket
 - 消息格式： JSON
 
-## 3、连接步骤【Demo】
+## 2、连接步骤【Demo】
 1. 获取邀请码URL， 根据邀请码URL截取inviteCode
 ~~~
 http://8.218.247.142:43581/chat.html#/auth/login?inviteCode=CgPRKwGOGIYVBFPb
@@ -97,7 +97,7 @@ ws://8.218.247.142:43101/?uid=1020105&ticket=045eb3b4b3f942918ff4a9582b5c900a
 
 ~~~
 
-## 4、 API【Demo】
+## 3、 API【Demo】
 - 发送群消息
 ~~~
 http://8.218.247.142:43777/api/chat/send?ticket=e6230e2b49474a4a922d22085eabac8d&uid=1020105&detail=消息内容&groupId=1020066
@@ -123,6 +123,18 @@ http://8.218.247.142:43777/api/chat/send?ticket=e6230e2b49474a4a922d22085eabac8d
     }
 }
 ~~~
+
+- 上传图片
+~~~
+http://8.218.247.142:43777/api/web/upload
+{
+    file: (binary), // 图片文件流
+    prefix: "chat" // 保存前缀
+}
+  
+~~~
+http://8.
+  
 
 ## 5、类及枚举
 - TCPTransform
@@ -156,6 +168,7 @@ http://8.218.247.142:43777/api/chat/send?ticket=e6230e2b49474a4a922d22085eabac8d
 
 - 消息格式 datatype
 - 1： 文本（默认）
+- 3： 图片
 
 
 - 群状态
