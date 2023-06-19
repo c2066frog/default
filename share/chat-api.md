@@ -7,7 +7,7 @@
 ## 2、连接步骤【Demo】
 1. 获取邀请码URL， 根据邀请码URL截取inviteCode
 ~~~
-http://8.218.247.142:43581/chat.html#/auth/login?inviteCode=CgPRKwGOGIYVBFPb
+http://chat.thalot03.com/chat.html#/auth/login?inviteCode=CgPRKwGOGIYVBFPb
 
 ~~~
 2. 【Api】根据inviteCode获取用户ticket信息：/api/auth/login/invite?inviteCode={$inviteCode}
