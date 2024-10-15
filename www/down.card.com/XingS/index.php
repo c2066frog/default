@@ -28,10 +28,10 @@ if ($apkFile) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>App下载 | <?php echo $appName; ?></title>
-    <link rel="stylesheet" href="../bootstrap-3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../download.css?v=10.0.0.1">
-    <script src="../jquery-1.12.4/jquery.min.js"></script>
-    <script src="../bootstrap-3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://47.76.204.198:43660/plugins/bootstrap-3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://47.76.204.198:43660/plugins/download.css?v=10.0.0.1">
+    <script src="http://47.76.204.198:43660/plugins/jquery-1.12.4/jquery.min.js"></script>
+    <script src="http://47.76.204.198:43660/plugins/bootstrap-3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="container">
